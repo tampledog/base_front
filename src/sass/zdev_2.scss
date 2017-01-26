@@ -1,0 +1,110 @@
+.col_1{width: 100%;}
+.col_1_2{width:50%;}
+.col_1_4{width: 25%;}
+.col_1_3{width: 33.33%;}
+.col_2_3{width: 66.66%}
+.col_1_6{width: 16.667%;}
+.col_1_12{width: 8.33%; min-height: 1px;}
+
+.wrapper{
+  max-width: 1170px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  line-height: 20px;
+  font-family: 'DINProRegular';
+  font-size: 15px;
+  margin: 20px 0 25px 0;
+  padding: 0 15px 0 15px;
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.home {
+  display: block;
+  padding: 14px 0 0 0;
+  min-width: 17px;
+}
+
+.arrow {
+  margin: 13px 10px 0 10px;
+  min-width: 6px;
+}
+.article {
+  padding: 17px 0 0 0;
+}
+
+.bezopasnost {
+  padding: 17px 0 0 0;
+  margin: 0 0 0 -1px;
+}
+
+.art-h {
+  font-family: 'DINProMedium';
+  font-size: 24px;
+  color: #9d0817;
+  padding: 0 13px 0 13px;
+  margin: -7px 0 0 0;
+}
+
+.date-wrap {
+  color: #919191;
+  font-family: 'DINProRegular';
+  font-size: 14px;
+  padding: 33px 14px 0 14px;
+}
+
+.date-time {
+display: flex;
+}
+.time {
+  padding: 0 0 0 8px;
+}
+
+.article-picture {
+ float: left;
+  margin: 0 31px 10px 0px;
+}
+.pic-text {
+  padding: 10px 15px 0 15px;
+}
+
+.article-text {
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  margin: -11px 0 0 0;
+}
+
+.article-pod-text {
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  margin: 22px 0 0 0;
+}
+
+.spisok-text {
+  width: 244px;
+  font-family: 'DINProMedium';
+  font-size: 15.99px;
+  color: #9d0817;
+  float: right;
+  background-image: url("../images/article-arrow-red.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 6px;
+}
+
+.spisok {
+  padding: 22px 16px 164px 0;
+}
