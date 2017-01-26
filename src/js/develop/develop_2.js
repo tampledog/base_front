@@ -55,10 +55,21 @@ function initialize() {
 
 }
 
+function sliderInitialization() {
+    //  про слайдер цей можеш почитати http://kenwheeler.github.io/slick/
+    $('#slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        //swipeToSlide:true,
+        dots:true
+    });
 
+}
 
 $(document).ready(function(){
-    initialize();
+   if($('#google-map').length>0){initialize();}
+   if($('#slider').length>0){sliderInitialization();}
 });
 
 $(window).load(function(){
