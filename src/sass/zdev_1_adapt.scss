@@ -10,21 +10,70 @@
 @media screen and (max-width: 1280px){
 
 }
+@media screen and (max-width: 1177px){
+  .otziv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .otz-col {
+    width: 390px;
+  }
+}
+@media screen and (max-width: 1115px){
+  .service-row {flex-wrap: wrap;}
+  .service-col {width: 400px;}
+}
 @media screen and (max-width: 1024px){
 
 }
-@media screen and (max-width: 992px){
 
+@media screen and (max-width: 977px){
+  .bot-row {flex-wrap: wrap;
+  justify-content: center;}
+  .phone-mail {flex-wrap: wrap;}
+
+}
+@media screen and (max-width: 775px){
+  .top-item {width: 100%;
+  justify-content: center;}
+  .mail {white-space: nowrap;}
+  .phone {white-space: nowrap;}
+  .mail_phone {flex-wrap:wrap;}
+  .red-row-text {flex-wrap:wrap;
+    align-content: center;}
+  .medals-item {
+    width: 50%;
+  }
 }
 @media screen and (max-width: 767px){
-
+  .devka {display: none; }
+  .form-name {width: 135%;}
+  .form-phone {width: 135%;}
+  .zapolnite {width: 135%;}
 }
+
 @media screen and (max-width: 666px){
-
+  .medals-item {
+    width: 100%;
+  }
 }
+
 @media screen and (max-width: 479px){
 
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 410px){
+.menu-item {width: 100%;
+  justify-content: flex-start; }
+}
 
+
+@media screen and (max-width: 345px){
+
+}
+@media screen and (max-width: 320px){
+  .menu {flex-wrap:wrap;
+    align-content: center;}
+  .logo {align-self: center;}
+  .menu-item {width: 100%;
+    justify-content: flex-start;}
 }
