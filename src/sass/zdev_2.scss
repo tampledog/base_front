@@ -105,8 +105,257 @@ display: flex;
   background-position: right;
   background-position-y: 6px;
 }
+.spisok-text:hover {
+  width: 244px;
+  font-family: 'DINProMedium';
+  font-size: 15.99px;
+  color: #770e19;
+  float: right;
+  background-image: url("../images/podrobno-arrow-a.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 6px;
+}
+
 
 .spisok {
   padding: 22px 16px 164px 0;
 }
 
+.about-us {
+  font-family: 'DINProMedium';
+  font-size: 24px;
+  text-align: center;
+  padding: 14px 5px 37px 0;
+}
+
+.about-picture{
+  float: left;
+  margin: 0 31px 10px 0px;
+}
+
+.about-text {
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  margin: -10px 0 0 0;
+}
+
+.about-pod-text {
+  height: 335px;
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  margin: 9px 0 0 0;
+}
+
+.zagolovok {
+  padding: 14px 5px 4px 0;
+  font-family: 'DINProMedium';
+  font-size: 24px;
+  color: #000000;
+  text-align: center;
+}
+
+.vse-otzuvu {
+  text-align: center;
+}
+
+.otziv-row {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+  display: flex;
+}
+
+.otziv-all {
+  border-top: 2px solid #e8e8e8;
+  margin: 5px auto;
+  padding: 52px 15px 35px 15px;
+}
+
+.otziv-data {
+  font-family: 'DINProMedium';
+  font-size: 18px;
+  color: #9d0817;
+  margin: -18px 0px 18px 0px;
+}
+
+.otziv-name {
+  font-family: 'DINProMedium';
+  font-size: 18px;
+  color: #9d0817;
+  margin: 5px 0 5px 0px;
+}
+
+.otziv-town {
+  font-family: 'DINProMedium';
+  font-size: 14px;
+  color: #404041;
+  margin: 0 0 0 0px;
+}
+.otziv-text {
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  padding: 8px 0 0 4px;
+  text-align: left;
+}
+
+.otziv-all:first-child {
+  border-top: none;
+}
+.otziv-form {
+  text-align: center;
+}
+
+.articles {
+  text-align: center;
+  font-size: 24px;
+  color: #000000;
+  font-family:'DINProMedium';
+  padding: 14px 20px 10px 15px;
+}
+
+.articles-all {
+  padding: 33px 15px 64px 15px;
+  border-bottom: 2px solid #e8e8e8;
+}
+
+
+
+.articles-header {
+  font-family: 'DINProMedium';
+  font-size: 18px;
+  color: #9d0817;
+  padding: 0 0 28px 0;
+}
+
+.articles-pic {
+  min-width: 263px;
+  margin: 0 29px 8px 0;
+
+}
+
+.articles-data {
+  color: #919191;
+  font-size: 14px;
+  font-family: 'DINProRegular';
+  float: left;
+  margin: 0px 8px 0 -1px;
+}
+
+.articles-time {
+  color: #919191;
+  font-size: 14px;
+  font-family: 'DINProRegular';
+  margin: 0px 0px 0 0px;
+}
+
+.articles-row {
+  display: flex;
+}
+
+.articles-text {
+  font-size: 16px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  line-height: 30px;
+  padding: 0px 0 0 0px;
+  text-align: left;
+  margin: -11px 0 0 0px;
+}
+
+.articles-pod-text {
+ font-family: 'DINProMedium';
+  font-size: 15.99px;
+  color: #9d0817;
+  float: right;
+  background-image: url("../images/article-arrow-red.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 6px;
+  width: 95px;
+  margin: 11px 0 0 0;
+}
+.articles-pod-text:hover {
+  font-family: 'DINProMedium';
+  font-size: 15.99px;
+  color: #770e19;
+  float: right;
+  background-image: url("../images/podrobno-arrow-a.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 6px;
+  width: 95px;
+  margin: 11px 0 0 0;
+}
+
+.articles-form {
+  text-align: center;
+}
+
+.yslygi-head {
+  text-align: center;
+  font-family: 'DINProMedium';
+  color: #000000;
+  font-size: 24px;
+  padding: 0 5px 41px 0;
+  margin: -7px auto;
+}
+.manager {
+  text-align: center;
+}
+.rows {
+  margin: 28px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.cols {
+  font-family: 'DINProMedium';
+  font-size: 18px;
+  color: #000000;
+  width: 555px;
+  height: 120px;
+  line-height: 24px;
+  box-shadow: 0 0 10px #9d0817;
+  display: inline-block;
+  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cols:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  box-shadow: none;
+  background-color: #9d0817;
+  width: 555px;
+  height: 120px;
+}
+
+.yslygi-zagolovok {
+  padding: 0 0 0 14px;
+  font-family: "DINProBold";
+  font-size: 18px;
+  color: #9d0817;
+  text-align: left;
+  text-transform: uppercase;
+}
+.coll {
+  width: 555px;
+  text-align: left;
+  padding: 20px 0px 10px 0px;
+  font-family: 'DINProRegular';
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.call-popup{
+  width: 500px;
+}

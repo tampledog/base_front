@@ -66,8 +66,12 @@ function sliderInitialization() {
     });
 
 }
-
+function fancyInit() {
+    $('.fancy-shnjaga').fancybox();
+}
 $(document).ready(function(){
+
+   if($('.fancy-shnjaga').length>0){fancyInit()}
    if($('#google-map').length>0){initialize();}
    if($('#slider').length>0){sliderInitialization();}
 });
