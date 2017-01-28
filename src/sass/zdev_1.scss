@@ -1,28 +1,32 @@
 @font-face {
-  font-family: "DINProRegular";
+  font-family: "DINPro";
   src: url("../fonts/DINProRegular.otf");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "DINProMedium";
+  font-family: "DINPro";
   src: url("../fonts/DINProMedium.otf");
+  font-weight: 500;
 }
 
 @font-face {
-  font-family: "DINProLight";
+  font-family: "DINPro";
   src: url("../fonts/DINProLight.otf");
+  font-weight: 300;
 }
 
 @font-face {
-  font-family: "DINProBold";
+  font-family: "DINPro";
   src: url("../fonts/DINProBold.otf");
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: "DINProBlack";
+  font-family: "DINPro";
   src: url("../fonts/DINProBlack.otf");
+  font-weight: 900;
 }
 ul {
   list-style-image: url("../images/galka.png");
@@ -54,7 +58,7 @@ li {
 }
 
 .red-row-text {
-  font-family: 'DINProMedium';
+  font-weight: 500;
   color: #fffefe;
   font-size: 15px;
   padding:10px 15px 0 15px;
@@ -74,6 +78,9 @@ li {
 .mail_phone {
   display: flex;
   justify-content: flex-end;
+  a{
+    color: #fff;
+    text-decoration: none;}
 }
 
 .mail {
@@ -108,7 +115,7 @@ li {
   justify-content:flex-end;
   padding: 27px 0px 0 0px;
   flex-wrap:wrap;
-  font-family: 'DINProMedium';
+font-weight: 500;
   font-size: 17px;
 }
 
@@ -142,12 +149,9 @@ li {
   letter-spacing: 0.65px;
 }
 
-.picture-text-row1 {
-  font-family:'DINProRegular';
-}
 
 .picture-text-row2 {
-  font-family: 'DINProBold';
+  font-weight: 500;
 }
 
 .service-row {
@@ -172,7 +176,7 @@ li {
 }
 
 .service-text {
-  font-family: 'DINProMedium';
+ font-weight: 500;
   color: #9d0917;
   text-transform: uppercase;
   font-size: 19px;
@@ -186,8 +190,8 @@ li {
 .spisok>ul>li {
   line-height: 18px;
   padding: 15px 0 0 8px;
-  font-size: 16px;
-  font-family: 'DINProRegular';
+
+
 }
 
 .price {
@@ -195,10 +199,10 @@ li {
   padding: 16px 0;
   border-top: 2px solid #e8e8e8;
   text-align: center;
-  font-family: 'DINProRegular';
+
   font-size: 24px;
   b {
-    font-family: 'DINProBold';
+    font-weight: 700;
     color: #9d0917;
   }
 }
@@ -232,14 +236,14 @@ flex-wrap: wrap;}
 
 
 .ostalis {
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 24px;
   text-transform: uppercase;
 }
 
 .zapolnite {
   width: 360px;
-  font-family: 'DINProMedium';
+  font-weight: 500;
   font-size: 17px;
   padding: 17px 0 22px 0;
   line-height: 24px;
@@ -272,7 +276,7 @@ flex-wrap: wrap;}
   display: inline;
   color: #aeaeae;
   font-size: 14px;
-  font-family: 'DINProMedium';
+  font-weight: 500;
 }
 
 .form-phone {
@@ -299,23 +303,9 @@ flex-wrap: wrap;}
   display: inline;
   color: #aeaeae;
   font-size: 14px;
-  font-family: 'DINProMedium';
+  font-weight: 500;
 }
 
-.zayavka {
-  width: 195px;
-  height: 46px;
-  background-color: #9d0817;
-  color: #ffffff;
-  font-family: 'DINProMedium';
-  font-size: 16px;
-  text-transform: uppercase;
-  border-bottom: 4px solid #770e19;
-  text-align: center;
-  padding: 13px 1px 0 0;
-  margin: 20px 0 0 0;
-  text-decoration: none!important;
-}
 
 .zayavka:hover {
   background-color: #770e19;
@@ -342,7 +332,7 @@ a {
 }
 
 .pochemy {
-  font-family: 'DINProMedium';
+  font-weight: 500;
   font-size: 24px;
   text-align: center;
   padding: 42px 0 0 0;
@@ -484,7 +474,7 @@ a {
 .medal-text {
   margin: 15px 0 0 0;
   color: #404041;
-  font-family: 'DINProMedium';
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   span {
@@ -496,7 +486,7 @@ a {
   padding: 82px 0 24px 3px;
   line-height: 50px;
   text-align: center;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
   span {
@@ -506,7 +496,7 @@ a {
 
 .clients {
   padding: 28px 0 10px 0;
-  font-family: 'DINProMedium';
+  font-weight: 500;
   line-height: 50px;
   text-align: center;
   font-size: 24px;
@@ -523,7 +513,7 @@ a {
   padding: 3px 15px 5px 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .dots {
@@ -546,32 +536,44 @@ a {
 }
 
 .otziv {
-  padding: 56px 3px 114px 2px;
+  padding: 0 0 114px;
   display: flex;
   justify-content: space-between;
 }
 
 .otz-col {
-  width: 33%;
+  width: 360px;
   text-align: center;
 
 }
 
-.portrets {
-  padding: 0 8px 0 0;
+.portrets {  padding-bottom: 33px;
+  .img{
+    width: 112px;
+    height: 122px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.08);
+    position: relative;
+    margin: 0 auto;
+    img{max-width: none;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform:translate(-50%, -50%);
+    }
+  }
 }
 
 .coment-who {
   line-height: 21px;
   color: #9d0817;
-  font-family: 'DINProMedium';
+  font-weight: 500;
   font-size: 18px;
 }
 
 .proff {
   color: #404041;
   font-size: 14px;
-  font-family: 'DINProRegular';
   line-height: 22px;
   padding: 3px 0 0 0;
 }
@@ -579,24 +581,29 @@ a {
 .place {
   color: #404041;
   font-size: 16px;
-  font-family: 'DINProMedium';
-}
+  font-weight: 500;}
 
 .profession {
-  height: 365px;
-  background-image: url("../images/otz-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: auto;
-  padding: 42px 0 0 0;
-  background-position-x: -8px;
-  background-position-y: -11px;
+  padding-top: 14px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.08);
+  width: 100%;
+    min-height: 300px;
+  position: relative;
+  z-index: 1;
+  &:before{
+    border: 14px solid transparent;	border-bottom: 30px solid #fff;
+    z-index: 2;
+    position: absolute;
+    content: '';
+    left:calc(50% - 14px);
+    top: -44px;
+  }
 }
 
 
 .coment {
-  padding: 15px 25px 0 17px;
-  font-family: 'DINProRegular';
+  padding: 15px 5px;
   line-height: 24px;
   color: #404041;
   font-size: 14px;
@@ -618,9 +625,10 @@ a {
   padding: 0 0 0 5px;
 }
 
+.podrobno{  padding-top: 5px;}
 .podrobno>a {
   padding: 0 0 4px 0;
-  margin: 20px 0 0 130px;
+  margin: 0 auto;
   display: block;
   width: 109px;
   background-position-y: 10px;
@@ -629,8 +637,7 @@ a {
   background-position: right;
   line-height: 24px;
   vertical-align: middle;
-  font-family: 'DINProMedium';
-  font-size: 15.99px;
+  font-weight: 500;  font-size: 15.99px;
   color: #9d0817;
 }
 
@@ -660,7 +667,6 @@ a {
   flex-direction: column;
   padding: 9px 23px 0 0;
   font-size: 14px;
-  font-family: 'DINProRegular';
 }
 
 a.dostavka {
@@ -713,26 +719,22 @@ a.dostavka:hover {
 
 .bot-col-4 a {
   text-decoration: none;
-  font-family: 'DINProMedium';
-  font-size: 17px;
+  font-weight: 500;  font-size: 17px;
   color: #ffffff;
 }
 
 .perezvonim {
-  font-family: 'DINProRegular';
   font-size: 16px;
   margin: 0 0 17px 0;
 }
 
 .voprosu {
-  font-family: 'DINProMedium';
-  font-size: 16px;
+  font-weight: 500;  font-size: 16px;
   padding: 0 0 7px 0;
 }
 
 .phone-bot {
-  font-family: 'DINProMedium';
-  font-size: 18px;
+  font-weight: 500;  font-size: 18px;
   line-height: 24px;
   padding: 1px 0 0 0;
   white-space: nowrap;
@@ -742,8 +744,7 @@ a.dostavka:hover {
 }
 
 .mail-bot {
-  font-family: 'DINProMedium';
-  font-size: 15px;
+  font-weight: 500;  font-size: 15px;
   line-height: 24px;
   white-space: nowrap;
   img {
@@ -753,11 +754,13 @@ a.dostavka:hover {
 
 .phone-mail {
   display: flex;
+  a{
+    text-decoration: none;
+    color: #fff;}
 }
 
 .adres-bot {
-  font-family: 'DINProMedium';
-  font-size: 15px;
+  font-weight: 500;  font-size: 15px;
   line-height: 24px;
   padding: 14px 0 0 0;
   img {

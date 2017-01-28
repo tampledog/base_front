@@ -17,12 +17,16 @@
         $mail = substr(htmlspecialchars(trim($_POST['contact_email'])), 0, 100);
         $mess .= '<b>Почта:</b>' . $mail . '<br>';
     }
+    if(isset($_POST['contact_text'])) {
+        $text = substr(htmlspecialchars(trim($_POST['contact_text'])), 0, 100);
+        $mess .= '<b>Отзыв :</b>' . $text . '<br>';
+    }
     $mess .= '<hr>';
     // подключаем файл класса для отправки почты
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('mail@mail.ru','');   // кому - адрес, Имя
+    $mail->AddAddress('info@avis.group','');   // кому - адрес, Имя
     $mail->IsHTML(true);                        // выставляем формат письма HTML
     $mail->Subject = $subject; // тема письма
     $mail->CharSet = "UTF-8";                   // кодировка

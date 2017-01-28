@@ -4,7 +4,7 @@
   border: 2px solid #9d0817;
   text-align: center;
   color: #9d0817;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: transparent;
   margin: 21px 26px 135px 0;
@@ -15,7 +15,7 @@
   border: 2px solid #9d0817;
   text-align: center;
   color: #FFFFFF;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: #9d0817;
   margin: 21px 26px 135px 0;
@@ -26,7 +26,7 @@
   border: 2px solid #770e19;
   text-align: center;
   color: #ffffff;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: #770e19;
   margin: 21px 26px 135px 0;
@@ -34,42 +34,34 @@
 
 
 
-#add_otz {
+.add_otz {
   width: 195px;
   height: 42px;
   border: 2px solid #9d0817;
   text-align: center;
   color: #9d0817;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: transparent;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 42px;margin: 0 15px;
 }
-#add_otz:hover {
-  width: 195px;
-  height: 42px;
-  border: 2px solid #9d0817;
-  text-align: center;
+.add_otz:hover {
   color: #ffffff;
-  font-family: 'DINProBold';
-  font-size: 16px;
   background-color: #9d0817;
+  text-decoration: none;
 }
-#add_otz:active {
-  width: 195px;
-  height: 42px;
-  border: 2px solid #770e19;
-  text-align: center;
-  color: #ffffff;
-  font-family: 'DINProBold';
-  font-size: 16px;
-  background-color: #770e19;
+.add_otz:active {
+   color: #ffffff;
+   background-color: #770e19;
 }
 
 #bezopasnost {
   width: 555px;
   height: 120px;
   background-color: transparent;
-  font-family: 'DINProMedium';
+  font-weight: 500;
   font-size: 18px;
 }
 
@@ -82,7 +74,7 @@
   border: 2px solid #9d0817;
   text-align: center;
   color: #9d0817;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: transparent;
   margin: 21px 0 133px 2px;
@@ -94,7 +86,7 @@
   border: 2px solid #9d0817;
   text-align: center;
   color: #ffffff;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: #9d0817;
   margin: 21px 0 133px 2px;
@@ -106,8 +98,81 @@
   border: 2px solid #770e19;
   text-align: center;
   color: #ffffff;
-  font-family: 'DINProBold';
+  font-weight: 700;
   font-size: 16px;
   background-color: #770e19;
   margin: 21px 0 133px 2px;
 }
+
+
+
+
+.send:hover,
+.send:active{  background-color: #770e19;}
+.send {
+  width: 195px;
+  height: 46px;
+  background-color: #9d0817;
+  color: #ffffff;
+  font-weight: 500;  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-bottom: 4px solid #770e19;
+}
+
+.zayavka {
+  width: 195px;
+  height: 46px;
+  background-color: #9d0817;
+  color: #ffffff;
+  font-weight: 500;  font-size: 16px;
+  text-transform: uppercase;
+  border-bottom: 4px solid #770e19;
+  text-align: center;
+  padding: 13px 1px 0 0;
+  margin: 20px 0 0 0;
+  text-decoration: none!important;
+}
+.form-zakaz{
+  .form-row{ width: 360px;    position: relative;
+    margin-bottom: 15px;
+    &:before{  top: 10px; left: 11px; position: absolute; content: ''; height: 13px; background-repeat: no-repeat; background-size:cover;}
+    &.ic-name:before{      background-image: url(../images/man-user.png);      width: 9px;}
+    &.ic-phone:before{      background-image: url(../images/phone1.png);      width: 13px;}
+    &.ic-city:before{      background-image: url(../images/ic-city.png);      width: 10px;}
+    &.ic-none:before{      display: none;}
+  }
+  textarea,
+  input{    width: 100%;     height: 34px;border: 1px solid #ddd;  padding-left: 30px;    font-size: 14px;    color: #aeaeae;    font-weight: 500;
+    background-color: #fff;
+    &::-webkit-input-placeholder { font-size: 14px; color: #aeaeae;      font-weight: 500;}
+              &:-moz-placeholder { font-size: 14px; color: #aeaeae;                font-weight: 500;}
+             &::-moz-placeholder {  font-size: 14px; color: #aeaeae;               font-weight: 500;}
+         &:-ms-input-placeholder {  font-size: 14px; color: #aeaeae;           font-weight: 500;}
+    &.error{border-color:red;}
+  }
+  textarea{    padding: 15px;    height: 145px; resize: none; }
+  &.contact-form{    width: 525px;    text-align: center;
+    .zapolnite{      width: 100%;      padding: 14px 0 26px;}
+    .form-row{      margin: 0 auto 20px;
+      &.ic-phone{      margin-bottom: 33px;}
+      &:before{        top: 14px;}
+    }
+    .ostalis{      position: relative;padding: 17px 0 24px;
+      &:before{    position: absolute;   bottom: 0;  left:calc(50% - 49px);  background-color: #9d0817; width: 98px; height: 2px;content: '';}
+    }
+
+    input{      height: 39px;}
+    &#form-pop2{      width: 720px;
+      .form-row{        width: 556px;}
+    }
+  }
+}
+.fancy-one{
+  .fancybox-skin{background-color: #f0f0f0;}
+  .fancybox-close{    right: -49px;}
+}
+.call-success{
+  padding: 20px;
+  text-align: center;}

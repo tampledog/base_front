@@ -67,7 +67,9 @@ function sliderInitialization() {
 
 }
 function fancyInit() {
-    $('.fancy-shnjaga').fancybox();
+    $('.fancy-shnjaga').fancybox({
+        wrapCSS: 'fancy-one'
+    });
 }
 $(document).ready(function(){
 
