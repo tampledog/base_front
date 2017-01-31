@@ -61,18 +61,22 @@ li {
   font-weight: 500;
   color: #fffefe;
   font-size: 15px;
+  line-height: 24px;
   padding:10px 15px 0 15px;
   display: flex;
   justify-content:space-between;
+
+
 }
 
 .top-item {
   display: flex;
+  justify-content: flex-start;
 }
 
 .adres>img {
   padding: 2px 10px 0 0;
-  margin:0 0 -2px 0;
+  margin:0 0 3px 0;
 }
 
 .mail_phone {
@@ -90,7 +94,7 @@ li {
 
 .mail>img {
   padding:0 8px 1px 0;
-  margin:0 0 0 0;
+  margin:0 0 5px 0;
 }
 
 .phone {
@@ -100,7 +104,7 @@ li {
 
 .phone>img {
   padding:0 7px 1px 0;
-  margin:0 0 0 0;
+  margin:0 0 3px 0;
 }
 
 .menu {
@@ -115,7 +119,7 @@ li {
   justify-content:flex-end;
   padding: 27px 0px 0 0px;
   flex-wrap:wrap;
-font-weight: 500;
+  font-weight: 500;
   font-size: 17px;
 }
 
@@ -163,7 +167,9 @@ font-weight: 500;
 }
 
 .service-col {
+  display: flex;
   flex-direction: column;
+  max-width: 380px;
 }
 
 .pod-text {
@@ -510,11 +516,22 @@ a {
 }
 
 .logos {
-  padding: 3px 15px 5px 15px;
+  height: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  img {
+    width: 16.6%;
+    position:absolute;
+    display: inline-block;
+  }
+  img.raz {opacity:0;filter:alpha(opacity=0);}
 }
+
+.logos>a:hover img.raz {opacity:1;filter:alpha(opacity=100);}
+.logos>a:hover img.dva, .demo img.dva:hover {opacity:0;filter:alpha(opacity=0);}
+
+
 
 .dots {
   display: flex;
@@ -547,7 +564,7 @@ a {
 
 }
 
-.portrets {  padding-bottom: 33px;
+.portrets {  padding-bottom: 33px; padding-top: 30px;
   .img{
     width: 112px;
     height: 122px;
@@ -691,7 +708,7 @@ a.dostavka:hover {
 .bot-col-4 {
   color: #ffffff;
   text-align: right;
-  margin: 12px 0 0 30px;
+  margin: 12px 0 0 0;
 }
 
 .bot-row {
@@ -736,7 +753,7 @@ a.dostavka:hover {
 .phone-bot {
   font-weight: 500;  font-size: 18px;
   line-height: 24px;
-  padding: 1px 0 0 0;
+  padding: 1px 23px 0 0px;
   white-space: nowrap;
   img {
     padding: 0 7px 4px 0;
@@ -748,7 +765,7 @@ a.dostavka:hover {
   line-height: 24px;
   white-space: nowrap;
   img {
-    padding: 0 8px 5px 23px;
+    padding: 0 8px 5px 0px;
   }
 }
 

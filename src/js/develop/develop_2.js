@@ -59,9 +59,9 @@ function sliderInitialization() {
     //  про слайдер цей можеш почитати http://kenwheeler.github.io/slick/
     $('#slider').slick({
         infinite: true,
-        slidesToShow: 1,
+        slidesToShow: 6,
         slidesToScroll: 1,
-        //swipeToSlide:true,
+        swipeToSlide:true,
         dots:true
     });
 

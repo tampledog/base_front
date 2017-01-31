@@ -19,7 +19,7 @@
     width: 390px;
   }
 }
-@media screen and (max-width: 1115px){
+@media screen and (max-width: 1145px){
   .service-row {flex-wrap: wrap;}
   .service-col {width: 400px;}
 }
@@ -29,21 +29,40 @@
 
 @media screen and (max-width: 977px){
   .bot-row {flex-wrap: wrap;
-  justify-content: center;}
-  .phone-mail {flex-wrap: wrap;}
-
+  justify-content: flex-start;}
+  .phone-mail {flex-wrap: wrap; }
+  .mail-bot {
+    img {padding: 0 8px 5px 0;}
+  }
 }
+
+@media screen and (max-width: 940px){
+  .bot-col-4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .voprosu { padding: 0 10px 0 0;}
+    .perezvonim {padding-right: 10px;
+          margin: 0 0 0 0;}
+  }
+}
+
+
 @media screen and (max-width: 775px){
-  .top-item {width: 100%;
-  justify-content: center;}
   .mail {white-space: nowrap;}
   .phone {white-space: nowrap;}
   .mail_phone {flex-wrap:wrap;}
   .red-row-text {flex-wrap:wrap;
-    align-content: center;}
+    .top-item {width: 100%;
+      justify-content: flex-start;}
+    align-items: stretch;}
   .medals-item {
     width: 50%;
   }
+  .bot-col-3 {
+    padding: 10px 0;
+  }
+  .bot-button {margin: 10px 0;}
 }
 @media screen and (max-width: 767px){
   .devka {display: none; }
@@ -56,6 +75,24 @@
   .medals-item {
     width: 100%;
   }
+  .medal-2-img{ margin-top: 15px;}
+}
+@media screen and (max-width: 637px){
+ .bot-col-4 {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+   align-items: center;
+   flex-wrap:wrap; justify-content:flex-start;
+
+ }
+}
+
+@media screen and (max-width: 531px){
+ .bot-button {
+   margin: 15px 0;
+ }
+  .voprosu {display: inline-block;}
 }
 
 @media screen and (max-width: 479px){
@@ -63,7 +100,8 @@
 }
 @media screen and (max-width: 410px){
 .menu-item {width: 100%;
-  justify-content: flex-start; }
+  justify-content: space-between;
+flex-direction: column;}
 }
 
 

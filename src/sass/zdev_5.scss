@@ -119,6 +119,7 @@
   text-decoration: none;
   border: none;
   border-bottom: 4px solid #770e19;
+  margin-bottom: 25px;
 }
 
 .zayavka {
@@ -135,7 +136,7 @@
   text-decoration: none!important;
 }
 .form-zakaz{
-  .form-row{ width: 360px;    position: relative;
+  .form-row{ max-width: 360px; min-width: 195px;   position: relative;
     margin-bottom: 15px;
     &:before{  top: 10px; left: 11px; position: absolute; content: ''; height: 13px; background-repeat: no-repeat; background-size:cover;}
     &.ic-name:before{      background-image: url(../images/man-user.png);      width: 9px;}

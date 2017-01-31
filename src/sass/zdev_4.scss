@@ -11,7 +11,23 @@ section.map{  font-weight: 500;  font-size: 18px; color: #000;  padding-bottom: 
 }
 section.slider{
   .mbox{max-width: 1184px;padding: 0 20px;}
-  .slider-wraper{ padding-bottom: 43px;}
+  .wraper-it{padding: 0 20px;
+    a{
+      position: relative;
+      img{transition:opacity 300ms;}
+      .raz{opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;}
+      .dva{        opacity: 1;}
+      &:hover{
+        .raz{opacity: 1;}
+        .dva{        opacity: 0;}
+      }
+    }
+  }
   .slick-initialized .slick-slide{ display: flex;}
   .slick-dots{    bottom: -17px;}
   .slick-dots li button{width: 7px; height: 7px; }
@@ -19,6 +35,7 @@ section.slider{
   .slick-dots li button:hover:before{ background-color: #f47920;}
   .slick-dots li.slick-active button:before{ background-color: #f47920;}
   .slick-dots li{ width: 7px; height: 7px;}
+
 
 }
 .title{  width: 100%;  text-align: center;  padding: 14px 0 33px;
