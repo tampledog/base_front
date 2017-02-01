@@ -56,7 +56,7 @@ function initialize() {
 }
 
 function sliderInitialization() {
-    //  про слайдер цей можеш почитати http://kenwheeler.github.io/slick/
+
     $('#slider').slick({
         infinite: true,
         slidesToShow: 6,
@@ -84,4 +84,17 @@ $(window).load(function(){
 
 $(window).resize(function(){
 
+});
+
+
+
+
+
+var comments_size = $(".reviews_item").length;
+var x=5;
+$('.reviews_item:lt('+x+')').show();
+$('.f_btn_e').click(function (e) {
+    e.preventDefault();
+    x= (x+5 <= comments_size) ? x+5 : comments_size;
+    $('.reviews_item:lt('+x+')').show();
 });
