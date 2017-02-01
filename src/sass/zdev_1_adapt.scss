@@ -86,6 +86,7 @@
 }
 
 
+
 @media screen and (max-width: 637px){
  .bot-col-4 {
    display: flex;
@@ -96,6 +97,14 @@
 
  }
 }
+
+@media screen and (max-width: 610px){
+  .cols {width: 340px;}
+  .coll-hide {width: 340px;}
+  .coll {width: 340px;}
+  .cols:hover {width: 340px;}
+}
+
 
 @media screen and (max-width: 531px){
   .otziv-row {flex-wrap: wrap;

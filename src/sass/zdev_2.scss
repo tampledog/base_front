@@ -56,7 +56,6 @@
 .date-wrap {
   color: #919191;
   font-size: 14px;
-  padding: 33px 0 0;
 }
 
 .date-time {
@@ -64,6 +63,10 @@ display: flex;
 }
 .time {
   padding: 0 0 0 8px;
+}
+
+.article-wrapper {
+  padding-bottom: 10px;
 }
 
 .article-picture {
@@ -211,8 +214,6 @@ display: flex;
   border-bottom: 2px solid #e8e8e8;
 }
 
-
-
 .articles-header {
   font-weight: 500;  font-size: 18px;
   padding: 0 0 28px 0;
@@ -268,6 +269,7 @@ display: flex;
   width: 95px;
   margin: 11px 0 0 0;
 }
+
 .articles-pod-text:hover {
   font-weight: 500;  font-size: 15.99px;
   color: #770e19;
@@ -307,14 +309,16 @@ display: flex;
   width: 555px;
   height: 120px;
   line-height: 24px;
-  box-shadow: 0 0 10px #9d0817;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.18);
   display: inline-block;
   vertical-align: middle;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 30px 30px;
 }
+
 
 .cols:hover {
   color: #FFFFFF;
@@ -342,6 +346,25 @@ display: flex;
   text-align: left;
   display: none;
 }
+
+@media screen and (max-width: 610px){
+  .cols {width: 450px;}
+  .coll-hide {width: 450px; }
+  .coll {width: 450px;
+     a {
+       display: block;
+       margin-top: 1px;}}
+  .cols:hover {width: 450px;}
+}
+
+@media screen and (max-width: 480px){
+  .cols {width: 340px;}
+  .coll-hide {width: 340px;}
+  .coll {width: 340px;}
+  .cols:hover {width: 340px;}
+}
+
+
 .coll-hide {
   width: 555px;
   text-align: left;
