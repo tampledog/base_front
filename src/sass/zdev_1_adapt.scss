@@ -23,6 +23,11 @@
   .service-row {flex-wrap: wrap;}
   .service-col {width: 400px;}
 }
+
+@media screen and (max-width: 1065px){
+  .rower { justify-content: flex-start;}
+}
+
 @media screen and (max-width: 1024px){
 
 }
@@ -93,6 +98,9 @@
 }
 
 @media screen and (max-width: 531px){
+  .otziv-row {flex-wrap: wrap;
+  justify-content: center;}
+  .otz-arrow {display: none;}
  .bot-button {
    margin: 15px 0;
  }

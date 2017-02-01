@@ -119,6 +119,11 @@ display: flex;
   padding: 14px 5px 37px 0;
 }
 
+.otziv-all {
+  display: none;
+}
+
+
 .about-picture{
   float: left;
   margin: 0 31px 10px 0px;
@@ -132,11 +137,10 @@ display: flex;
 }
 
 .about-pod-text {
-  height: 335px;
   font-size: 16px;
   color: #000000;
   line-height: 30px;
-  margin: 9px 0 0 0;
+  margin: 9px 0 50px 0;
 }
 
 .zagolovok {
@@ -331,10 +335,21 @@ display: flex;
 .coll {
   width: 555px;
   text-align: left;
-  padding: 20px 0px 10px 0px;
+  padding: 0px 0px 10px 0px;
   color: #000000;
   font-size: 16px;
   line-height: 30px;
+  text-align: left;
+  display: none;
+}
+.coll-hide {
+  width: 555px;
+  text-align: left;
+  padding: 0px 0px 10px 0px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: left;
 }
 
 .call-popup{

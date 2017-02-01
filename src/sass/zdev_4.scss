@@ -2,7 +2,7 @@ section.map{  font-weight: 500;  font-size: 18px; color: #000;  padding-bottom: 
   .mbox{max-width: 1184px;padding: 0 20px;}
   .map-wrapper{}
   #google-map{height: 573px; width: 100%;}
-  .rower{    display: flex;    justify-content: space-between;    align-items: center;    padding-bottom: 31px;}
+  .rower{    display: flex;    justify-content: space-between;    align-items: center;    padding-bottom: 31px; flex-wrap: wrap;}
   .item{    display: flex;    justify-content: flex-start;    align-items: center;
     &.tel{      font-size: 24px;}
     &.ggg{      width: 260px;}

@@ -90,6 +90,15 @@ $(window).resize(function(){
 });
 
 
+var comments_siz = $(".otziv-all").length;
+var y=5;
+$('.otziv-all:lt('+y+')').show();
+$('.show_more').click(function (e) {
+    e.preventDefault();
+    y= (y+5 <= comments_siz) ? y+5 : comments_siz;
+    $('.otziv-all:lt('+y+')').show();
+});
+
 
 
 
@@ -101,3 +110,13 @@ $('.f_btn_e').click(function (e) {
     x= (x+5 <= comments_size) ? x+5 : comments_size;
     $('.reviews_item:lt('+x+')').show();
 });
+
+$('.pynkt').click(function(){
+    $(this).toggleClass('active');
+    if($(this).hasClass('active')) {
+    $(this).closest('div').find('.coll').slideDown();
+    }
+    else{$('.coll').slideUp();}
+
+});
+
