@@ -5,6 +5,9 @@ function initialize() {
         center: myLatlng,
         disableDefaultUI: false, //без управляющих елементов
         mapTypeId: google.maps.MapTypeId.ROADMAP, // SATELLITE - снимки со спутника,
+        scrollwheel: false,
+        zoomControl:true,
+      
         zoomControlOptions: {
             position: google.maps.ControlPosition.LEFT_BOTTOM // позиция слева внизу для упр елементов
         }
