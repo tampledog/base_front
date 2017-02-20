@@ -62,7 +62,7 @@ li {
   color: #fffefe;
   font-size: 15px;
   line-height: 24px;
-  padding:10px 15px 0 15px;
+  padding:7px 15px 0 15px;
   display: flex;
   justify-content:space-between;
 
@@ -90,6 +90,7 @@ li {
 .mail {
   white-space: nowrap;
   padding: 2px 23px 0 0;
+  margin-top: -2px;
 }
 
 .mail>img {
@@ -111,27 +112,26 @@ li {
   display: flex;
   padding: 8px 14px 17px 16px;
 }
+.menu ul li {
+  display: inline;
+  a {padding-left: 33px;
+    color: #404041;
+  white-space: nowrap;}
+  a:hover {
+    color: #9d0817;
+  }
+}
+
 
 
 
 .menu-text {
   display: flex;
   justify-content:flex-end;
-  padding: 27px 0px 0 0px;
+  padding: 8px 0px 0 0px;
   flex-wrap:wrap;
   font-weight: 500;
   font-size: 17px;
-}
-
-.menu-a {
-  padding: 0 0px 0 37px;
-  text-decoration: none;
-  color: #404041;
-}
-
-.menu-a:hover {
-  text-decoration: none;
-  color: #9d0817;
 }
 
 .picture-place {
@@ -149,7 +149,7 @@ li {
   line-height: 50px;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 6.28% 0 0 0;
+  padding: 6.28% 24px 0 24px;
   letter-spacing: 0.65px;
 }
 
@@ -160,52 +160,66 @@ li {
 
 .service-row {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 17px 0 0 0;
+  padding: 41px 0 0 0;
   margin: 0 0 0 0;
 }
 
-.service-col {
-  display: flex;
+.service-col {display: flex;
   flex-direction: column;
-  max-width: 380px;
+  max-width: 360px;
 }
 
 .pod-text {
-  background-image: url("../images/pod-txt.jpg");
-  background-position: center;
-  min-height: 165px;
-  background-repeat: no-repeat;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.08);
+  position:relative;
+  width: 100%;
+  min-height: 104px;
+  z-index: 1;
   text-align: center;
-  margin:0 0 -7px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:before{
+    border: 14px solid transparent;	border-top: 30px solid #fff;
+    z-index: 2;
+    position: absolute;
+    content: '';
+    left:calc(50% - 14px);
+    top: 100px;
+  }
 }
+
 
 .service-text {
  font-weight: 500;
   color: #9d0917;
   text-transform: uppercase;
   font-size: 19px;
-  padding: 67px 0 0 0;
 }
 
 .spisok {
-  padding: 10px 14px 10px 0;
+  padding: 13px 0px 10px 0;
+  text-align: left;
+}
+
+.spisok ul {
+  padding-left: 24px;
 }
 
 .spisok>ul>li {
   line-height: 18px;
   padding: 15px 0 0 8px;
 
-
 }
 
 .price {
-  margin: 25px 15px;
+  margin: 0px 15px 22px 15px;
   padding: 16px 0;
   border-top: 2px solid #e8e8e8;
   text-align: center;
-
   font-size: 24px;
   b {
     font-weight: 700;
@@ -341,7 +355,7 @@ a {
   font-weight: 500;
   font-size: 24px;
   text-align: center;
-  padding: 42px 0 0 0;
+  padding: 39px 0 0 0;
   span {
     color: #9d0917;
   }
@@ -473,16 +487,16 @@ a {
 .medals-row {
   display: flex;
   justify-content: space-around;
-  padding: 50px 0 0 0;
+  padding: 47px 0 0 0;
   flex-wrap: wrap;
 }
 
 .medal-text {
-  margin: 15px 0 0 0;
+  margin: 24px 0 0 0;
   color: #404041;
   font-weight: 500;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 7px;
   span {
     color: #9d0817;
   }
@@ -559,7 +573,7 @@ a {
 }
 
 .otz-col {
-  width: 360px;
+  max-width: 360px;
   text-align: center;
 
 }

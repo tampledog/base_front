@@ -13,10 +13,7 @@
 @media screen and (max-width: 1177px){
   .otziv {
     flex-wrap: wrap;
-    justify-content: center;
-  }
-  .otz-col {
-    width: 390px;
+    justify-content: space-around;
   }
 }
 @media screen and (max-width: 1145px){
@@ -74,6 +71,13 @@
   .form-name {width: 135%;}
   .form-phone {width: 135%;}
   .zapolnite {width: 135%;}
+}
+
+@media screen and (max-width: 700px){
+  .pic-text {
+    display: flex;
+    flex-direction: column;}
+  .article-picture{padding-bottom: 25px;}
 }
 
 @media screen and (max-width: 666px){
